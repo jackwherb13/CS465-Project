@@ -1,0 +1,7 @@
+# compiled output
+*.o
+*.out
+
+# editor / OS junk
+.vscode/
+.DS_Store
