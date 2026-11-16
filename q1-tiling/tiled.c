@@ -15,7 +15,7 @@ void fill_matrix(int **M, int n) {
             M[i][j] = rand();
 }
 
-/* Reference kernel: copied from the handout */
+/* Reference kernel*/
 void matmul(int **A, int **B, int **C, int rowsA, int colsA, int colsB) {
     for (int i = 0; i < rowsA; i++) {
         for (int j = 0; j < colsB; j++) {
@@ -27,7 +27,7 @@ void matmul(int **A, int **B, int **C, int rowsA, int colsA, int colsB) {
     }
 }
 
-/* Tiled kernel: assumes bs divides n evenly */
+/* Tiled kernel*/
 void matmul_tiled(int **A, int **B, int **C, int n, int bs) {
     for (int i = 0; i < n; i++)
         for (int j = 0; j < n; j++)
